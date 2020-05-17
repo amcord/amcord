@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>amcord_</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amcord_</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:ital,wght@0,200;0,600;1,200;1,600&family=Roboto:ital,wght@0,100;0,700;1,100;1,700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/cf9ade6a44.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Amanda Am. Cordeiro</h1>
-        <h2 class="site-subtitle">designer</h2>
-      </header>   
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="titulo">
+      <img class="img-logo" src="./img/logo.png" alt="amcord">
+      <h1 class="site-title">Amanda Am. Cordeiro</h1>
+      <h2 class="site-subtitle">designer</h2>
+    </div>
+  </header>
+
+<section>
+  <section class="sobre container">
+    <h2>sobre</h2>
+    <figure class="avatar">
+      <img src="https://pbs.twimg.com/profile_images/1255914592422821891/2eXnidFC_400x400.jpg" alt="am_cord" class="src">
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla culpa veniam minima voluptatibus eligendi nisi tenetur maiores neque harum.</p> 
+    <p> Cumque placeat neque vel, vitae perspiciatis tenetur omnis quisquam consequatur?Sapiente, magni accusantium ipsa, iste, neque error et iusto vero quaerat quod maxime doloremque nostrum nulla. Quaerat, sed adipisci inventore eligendi rerum a soluta hic impedit reiciendis numquam! Eum, id.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nulla culpa veniam minima voluptatibus eligendi nisi tenetur maiores neque harum.</p> 
+    <p> Cumque placeat neque vel, vitae perspiciatis tenetur omnis quisquam consequatur?Sapiente, magni accusantium ipsa, iste, neque error et iusto vero quaerat quod maxime doloremque nostrum nulla. Quaerat, sed adipisci inventore eligendi rerum a soluta hic impedit reiciendis numquam! Eum, id.</p>
+
+    <p>Esse site foi construído durante o curso de Imersão CSS da Alura | Maio 2020 💌</p>
+  </section>
+
+</section>
+  <section class="portfolio container" id="portfolio">
+    <h2>Portfólio</h2>
+
+    <div class="grid">
+
+      <div class="flip-card">    
+        <div class="card">
+        <figure class="card-front">
+          <img class="img-portfolio" src="./img/mockup_01.png" alt="Social Media">
+          <figcaption>Social Media</figcaption>
+        </figure>
+        <div class="card-back">
+          MetalCo
+        </div>
+      </div>
+    </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mockup_02.jpg" alt=">Branding">
+            <figcaption>Branding</figcaption>
+          </figure>
+          <div class="card-back">
+              1001 Lojas
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mockup_03.jpg" alt="Editorial">
+            <figcaption>Editorial</figcaption>
+          </figure>
+         <div class="card-back">
+            Brugnerotto
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mockup_04.jpg" alt="UX | UI">
+            <figcaption>UX | UI</figcaption>
+          </figure>
+         <div class="card-back">
+            MAI
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://www.behance.net/am_cord">
+        <i class="fab fa-behance"></i>
+      </a>
+      <a target="_blank" href="https://linkedin.com/in/amcord">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:amcord.amanda@gmail.com">
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+
 </body>
+
 </html>

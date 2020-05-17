@@ -1,10 +1,45 @@
+/* reset do css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background: #FFFFFF;
-    font-family: Montserrat; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+  }
+
+/* se a tela pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body{
+    font-size: 12px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 800px) {
+  body{
+    font-size: 14px;
+  }
+}
+
+  header{
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu {
     background-color: #E6E6E6;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index:1;
   }
   
   .menu ul {
@@ -16,22 +51,176 @@ body {
     list-style: none;
   }
   
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+
   a{
-    color: #666666;
-    text-decoration: none; 
+    color: #38348b;
+    text-decoration: none;     
+    font-family: Montserrat SemiBold;
+  }
+
+  .menu a:hover{
+    color: #434798;
   }
   
   a:hover {
-    text-decoration: underline;
+    text-shadow: 1px 1px #8879b6;
   }
-  
+
   .site-subtitle,
   .site-title {
     color: #666666;
     text-align: center;
+    
   }
   
+  .site-title{
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
   .site-subtitle{
     font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+  }
+
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 2em;
+    min-height: 100vh;
+  }
+
+  @media (min-width: 1280px){
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    }
+  }
+
+
+  .sobre h2,
+  .contato h2,
+  .portfolio h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+
+  .sobre p {
+    color: #666666;
+    margin-bottom: 0.5em;
+    text-align: left;
+  }
+
+  .sobre .avatar{
+    float: right;
+    margin-left: 3em;
+    margin-bottom: 3em;
+  }
+
+  .sobre .avatar img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  @media (min-width: 630px) {
+    .portfolio .grid {
+      grid-template-columns: 280px 280px;
+    }
+  }
+
+  @media (min-width: 930px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 280px);
+      height: calc(100vh - 1em - 36px);
+    }
+  }
+
+  @media (min-width: 1260px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(4, 280px);
+
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio{
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
   }
   
+/*  .img-portfolio:hover{
+    transform: scale(1.1);
+  }*/
+
+  .flip-card{
+    perspective: 2000px;
+  }
+
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+  }
+
+  .flip-card:hover .card{
+    transform:rotateY(180deg)
+  }
+
+  .card-front, .card-back{
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-back {
+    background-color: #8879b6;
+    width: 280px;
+    height: 210px;
+    transform: rotateY(180deg)
+  }
+
+  @media (min-width: 1280px) {
+    .img-portfolio{
+      width: 280px;
+      height: 210px;
+    }
+  }
+
+  .contato .icons{
+    text-align: center;
+
+  }
+  .contato a{
+    color: #38348b;
+    font-size: 24px;
+  }
+
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow:1px 1px #879b6;
+  }
+
